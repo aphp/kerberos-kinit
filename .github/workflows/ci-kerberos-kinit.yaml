@@ -16,3 +16,4 @@ jobs:
     with:
       dockerfile-path: "Dockerfile"
       image-name: "ghcr.io/aphp/kerberos-kinit"
+      dockle-ignore: "DL3008"

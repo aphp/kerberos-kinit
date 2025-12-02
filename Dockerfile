@@ -5,9 +5,11 @@ FROM debian:bookworm-slim
 
 RUN apt-get update && \
     apt-get upgrade && \
-    apt-get install -y \
+    apt-get --yes --no-install-recommends \
         krb5-user \
-        libkrb5-dev
+        libkrb5-dev &&\
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 RUN useradd -ms /bin/bash rekinit
 
