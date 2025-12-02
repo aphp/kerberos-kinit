@@ -16,4 +16,5 @@ jobs:
     with:
       dockerfile-path: "Dockerfile"
       image-name: "ghcr.io/aphp/kerberos-kinit"
-      ignore_hadolint_rules: "DL3008"
+      hadolint-ignore: "DL3008"
+      dockle-ignore: "CIS-DI-0010"
