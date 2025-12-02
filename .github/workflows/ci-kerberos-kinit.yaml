@@ -1,4 +1,4 @@
-name: ci-eds-notebooks
+name: ci-kerberos-kinit
 run-name: Kerberos Kinit CI triggered by @${{ github.actor }}
 
 on:
